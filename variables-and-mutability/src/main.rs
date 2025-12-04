@@ -1,5 +1,5 @@
 // apply directive to whole file
-#![allow(unused_variables)]
+// #![allow(unused_variables)]
 /* const TAX_RATE: f64 = 7.25; */
 //type Meters = i32;
 type Season<'a> = &'a str;
