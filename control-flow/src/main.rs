@@ -3,7 +3,17 @@
     println!("The number is {result}")
 } */
 
+// fn countdown(seconds: i32) {
+//     if seconds == 0 {
+//         println!("Blastoff!")
+//     } else {
+//         println!("{seconds} seconds to blastoff..");
+//         countdown(seconds - 1);
+//     }
+// }
+
 fn main() {
+    // countdown(5);
     // if true {
     //     println!("This line will be output");
     // }
@@ -51,7 +61,7 @@ fn main() {
     //     _ => unreachable!(),
     // }
 
-    /* let mut seconds = 21 */
+    // let mut seconds = 21;
 
     /* loop {
         if seconds <= 0 {
@@ -69,15 +79,58 @@ fn main() {
         seconds -= 1;
     } */
 
-    /* while seconds > 0 {
-        if seconds % 2 == 0 {
-            println!("{seconds} seconds (even number), skipping 3 seconds..");
-            seconds -= 3;
-            continue;
-        }
+    // while seconds > 0 {
+    //     if seconds % 2 == 0 {
+    //         println!("{seconds} seconds (even number), skipping 3 seconds..");
+    //         seconds -= 3;
+    //         continue;
+    //     }
 
-        println!("{seconds} seconds to blastoff..");
-        seconds -= 1;
+    //     println!("{seconds} seconds to blastoff..");
+    //     seconds -= 1;
+    // }
+    // println!("Blastoff!");
+    //
+
+    /*
+    Define a `factorial` function that calculates the
+    factorial of a number. The factorial is the product
+    of multiplying a number by every incremental
+    number leading up to it, starting from 1.
+
+    Examples:
+    The factorial of 5 is 5 * 4 * 3 * 2 * 1 = 120
+    factorial(5) should return 120.
+
+    The factorial of 4 is 4 * 3 * 2 * 1 = 24
+    factorial(4) should return 24.
+
+    Implement two solutions/functions for the problem.
+    The first solution should not use recursion.
+    The second solution should use recursion.
+    */
+
+    println!("{}", color_to_number("red"));
+}
+
+fn factorial() {}
+
+fn color_to_number(color: &str) -> i32 {
+    // if color == "red" {
+    //     return 1;
+    // } else if color == "green" {
+    //     return 2;
+    // } else if color == "blue" {
+    //     return 0;
+    // } else {
+    //     return 0;
+    //  } */
+    //
+    // match
+    match color {
+        "red" => return 1,
+        "green" => return 2,
+        "blue" => return 0,
+        _ => unreachable!(),
     }
-    println!("Blastoff!"); */
 }
