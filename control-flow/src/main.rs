@@ -111,8 +111,9 @@ fn main() {
     */
 
     // println!("{}", color_to_number("red"));
-    println!("{:?}", factorial(5));
-    println!("{}", factorial_rec(5))
+    println!("{}", factorial(5));
+    println!("{}", factorial_rec(5));
+    println!("{}", factorial_iterative(5))
 }
 
 // Without recursion
@@ -122,6 +123,17 @@ fn factorial(number: i32) -> i32 {
         result = result * num;
     }
     return result;
+}
+
+fn factorial_iterative(number: i32) -> i32 {
+    let mut product = 1;
+    let mut count = number; // count = 5
+
+    while count > 0 {
+        product *= count;
+        count -= 1;
+    }
+    return product;
 }
 
 // With recursion
@@ -142,9 +154,9 @@ fn factorial_rec(number: i32) -> i32 {
 //     return 3;
 // } else {
 //     return 0;
-//  } */
+// } */
 //
-// match
+// match statement
 // match color {
 //     "red" => 1,
 //     "green" => 2,
