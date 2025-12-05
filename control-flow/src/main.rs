@@ -139,16 +139,16 @@ fn factorial_rec(number: i32) -> i32 {
 // } else if color == "green" {
 //     return 2;
 // } else if color == "blue" {
-//     return 0;
+//     return 3;
 // } else {
 //     return 0;
 //  } */
 //
 // match
 // match color {
-//     "red" => return 1,
-//     "green" => return 2,
-//     "blue" => return 0,
-//     _ => unreachable!(),
+//     "red" => 1,
+//     "green" => 2,
+//     "blue" => 3,
+//     _ => 0,
 // }
 // }
