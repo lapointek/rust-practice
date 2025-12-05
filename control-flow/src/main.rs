@@ -110,27 +110,45 @@ fn main() {
     The second solution should use recursion.
     */
 
-    println!("{}", color_to_number("red"));
+    // println!("{}", color_to_number("red"));
+    println!("{:?}", factorial(5));
+    println!("{}", factorial_rec(5))
 }
 
-fn factorial() {}
+// Without recursion
+fn factorial(number: i32) -> i32 {
+    let mut result = 1;
+    for num in 2..=number {
+        result = result * num;
+    }
+    return result;
+}
 
-fn color_to_number(color: &str) -> i32 {
-    // if color == "red" {
-    //     return 1;
-    // } else if color == "green" {
-    //     return 2;
-    // } else if color == "blue" {
-    //     return 0;
-    // } else {
-    //     return 0;
-    //  } */
-    //
-    // match
-    match color {
-        "red" => return 1,
-        "green" => return 2,
-        "blue" => return 0,
-        _ => unreachable!(),
+// With recursion
+fn factorial_rec(number: i32) -> i32 {
+    if number == 1 {
+        return 1;
+    } else {
+        number * factorial_rec(number - 1)
     }
 }
+
+// fn color_to_number(color: &str) -> i32 {
+// if color == "red" {
+//     return 1;
+// } else if color == "green" {
+//     return 2;
+// } else if color == "blue" {
+//     return 0;
+// } else {
+//     return 0;
+//  } */
+//
+// match
+// match color {
+//     "red" => return 1,
+//     "green" => return 2,
+//     "blue" => return 0,
+//     _ => unreachable!(),
+// }
+// }
